@@ -5,3 +5,5 @@ interface User{
     password: string
     name: string
 }
+
+export default User;
