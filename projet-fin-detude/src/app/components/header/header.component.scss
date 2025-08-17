@@ -1,0 +1,73 @@
+/*.container {
+  display: flex;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  background-color: rgb(72, 17, 175);
+  color: #fff;
+}
+
+.links {
+  flex-grow: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: right;
+}
+
+.link {
+  cursor: pointer;
+}
+*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #210b6d; /* Bleu sympa */
+  padding: 10px 20px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#link {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.link {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.link:hover {
+  cursor: pointer;
+  background-color: #0b62d6;
+  color: #fff;
+}
+
+/* Responsive : sur petit écran, les liens passent en colonne */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #link {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .link {
+
+    width: 100%;}
+  }
+  
