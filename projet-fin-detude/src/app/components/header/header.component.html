@@ -1,20 +1,25 @@
 <div class="container">
-    <div class="logo">LVSH</div>
+  <div class="logo">LVSH</div>
 
-    <div id="link">
-        <div class="link" (click)="goToHomePage()" >Home</div>
-        <div class="link" (click)="goToProductPage()" >Product</div>
-        <div class="link" (click)="goToCartPage()">Cart</div>
-        <div class="link" (click)="goToContactPage()">Contact</div>
-
-
-        <div class="link" (click)="goToLoginPage()">Logins</div>
-
-        <div *ngIf="false">Welcome</div>
-
-        <div *ngIf="false" >Logout</div>
-
-
+  <div id="link">
+    <div class="link" (click)="goToHomePage()">
+      <i class="fas fa-home"></i> Home
+    </div>
+    <div class="link" (click)="goToProductPage()">
+      <i class="fas fa-box"></i> Product
+    </div>
+    <div class="link" (click)="goToCartPage()">
+      <i class="fas fa-shopping-cart"></i> Cart
+    </div>
+    <div class="link" (click)="goToContactPage()">
+      <i class="fas fa-envelope"></i> Contact
+    </div>
+    <div class="link" (click)="goToLoginPage()">
+      <i class="fas fa-user"></i> Logins
     </div>
 
+    <div *ngIf="false">Welcome</div>
+    <div *ngIf="false">Logout</div>
+  </div>
 </div>
+
